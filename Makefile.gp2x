@@ -1,0 +1,9 @@
+include Makefile
+
+CC = arm-open2x-linux-gcc
+EXT = .gpu
+CFLAGS = -Wall -O2 -g -static -I/opt/open2x/gcc-4.1.1-glibc-2.3.6/include -DGP2X
+SDLCONFIG = /opt/open2x/gcc-4.1.1-glibc-2.3.6/bin/sdl-config
+CURLCONFIG = /opt/open2x/gcc-4.1.1-glibc-2.3.6/bin/curl-config
+XMLCONFIG = /opt/open2x/gcc-4.1.1-glibc-2.3.6/bin/xml2-config
+LIBS = -lSDL_image -lSDL_gfx -lSDL_ttf -ljpeg -lpng -lz -lfreetype -lSDL_mixer -lsmpeg -lstdc++

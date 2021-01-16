@@ -1,0 +1,99 @@
+Change log file for PSP-Maps
+
+version 2.2	(2009-12-14)
+	* replaced radius scan with recursive scan
+	* allow bigger disk cache
+	* updated urls.txt for Google Maps
+
+version 2.1	(2009-05-03)
+	* changed the default view to Virtual Earth
+	* added OpenStreetMap support
+	* fixed network errors that could corrupt cache
+
+version 2.0	(2008-10-08)
+	* added basic PSP-290 GPS support
+	* removed the spash screen
+	* cheat for sky/moon/mars has been moved to the menu
+	* protect .dat files from accidental overwrites
+
+version 1.4	(2008-08-24)
+	* fixed get directions crash
+	* you can now save favorites with names
+
+version 1.3	(2008-08-20)
+	* fixed Google views
+	* moved all urls to file urls.txt for easier upgrading
+	* added directions entry to the menu
+	* added motion kit support
+	* new splash screen for the NEO Summer Compo 2008
+
+version 1.2	(2008-05-29)
+	* fixed Google Map views
+	* added window title and icon for PC version
+
+version 1.1	(2008-05-01)
+	* added experimental and basic KML files support
+	* removed the buggy Google Moon visible view
+
+version 1.0	(2008-04-23)
+	* added GP2X version
+	* added Google Moon, Google Mars and Google Sky support
+	* fixed Google Terrain view
+	* new splash screen for the PSP-Hacks competition with sound
+
+version 0.8	(2008-04-06)
+	* better performance with big cache
+	* added Danzeff keyboard support
+	* fixed cache neighborhood option for hybrid maps
+	* moved images, font and user files to the data/ subfolder
+	* improved memory usage
+
+version 0.7	(2008-03-29)
+	* added Windows version to the release
+	* added Google Maps and Yahoo Maps! hybrid views
+	* added Virtual Earth hill view
+	* added a list of available views in the menu
+	* new icon and screenshot
+	* joystick should be less sensitive and more precise
+	* added optional on-screen informations (lat/lon/zoom/view)
+	* geocoding now uses maps.google.com (and not .fr)
+	* load balancing between Google Maps servers
+	* menu updated (smaller font, nicer coding)
+	* readme file was updated
+
+version 0.6	(2008-03-20)
+	* added splash screen for the NEO Spring coding contest 2008
+	* added a progress bar when shrinking the cache
+	* added an image to help zoom in (show/hide with button O)
+	* updated the Makefile to remove old version number
+
+version 0.5	(2008-03-19)
+	* added Virtual Earth and Yahoo! Maps support (thanks to boomerang for the idea)
+	* address search menu
+	* customizable cache size
+	* added an option to load neighborhood to cache
+	* switched to TTF font
+	* fixed a bug with favorites
+	* new buttons mapping
+
+version 0.4	(2008-03-15)
+	* added a cache on the memory stick
+	* allows offline browsing of maps in the cache
+	* added a configuration file
+	* added options to disable disk cache and transition effects
+	* added an error image when view is not available
+	* better zoom level (thanks to elefas for the tip)
+
+version 0.3	(2008-03-13)
+	* added a menu to load/save favorites
+	* some nicer effects (zoom/unzoom, fade in/out, scrolling)
+	* removed the ugly splash screen
+
+version 0.2	(2008-03-11)
+	* added a menu to select wireless connection
+	* the map loads faster
+	* you can now use the analog stick for smooth moves
+	* added a cache to go back quickly to the previous views
+
+version 0.1	(2008-03-03)
+	* initial version

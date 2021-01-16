@@ -1,0 +1,30 @@
+TARGET = PSP-Maps
+OBJS = pspmaps.o global.o kml.o sceUsbGps.o
+
+PSP_FW_VERSION = 371
+BUILD_PRX = 1
+
+INCDIR = 
+CFLAGS = -O2 -G0 -Wall -g
+CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
+ASFLAGS = $(CFLAGS)
+
+LIBDIR =
+
+EXTRA_TARGETS = EBOOT.PBP
+PSP_EBOOT_TITLE = PSP-Maps
+PSP_EBOOT_ICON = icon.png
+PSP_EBOOT_PIC1 = screenshot.png
+
+PSPSDK=$(shell psp-config --pspsdk-path)
+PSPBIN = $(PSPSDK)/../bin
+
+CFLAGS += -I/usr/local/pspdev/psp/include/SDL $(shell $(PSPBIN)/curl-config --cflags) $(shell $(PSPBIN)/xml2-config --cflags)
+
+LIBS = -lmotion_driver -lc -lSDL_image -lSDL_gfx -lSDL_ttf -lSDL_mixer -lpng -ljpeg -lSDL -lcurl -lfreetype
+LIBS += $(shell $(PSPBIN)/sdl-config --libs)
+LIBS += $(shell $(PSPBIN)/curl-config --libs)
+LIBS += $(shell $(PSPBIN)/xml2-config --libs)
+LIBS += -lpspwlan -lpsputility -lpspgum -lpspgu -lpspusb -lm
+
+include $(PSPSDK)/lib/build.mak
